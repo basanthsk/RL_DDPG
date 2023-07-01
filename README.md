@@ -1,0 +1,9 @@
+[![](https://img.shields.io/badge/Python-white?logo=Python)](#)
+[![](https://img.shields.io/badge/Jupyter-white?logo=Jupyter)](#)
+[![](https://img.shields.io/badge/PyTorch-white?logo=pytorch)](#)
+[![](https://img.shields.io/badge/Colab-white?logo=googlecolab)](#)
+[![](https://img.shields.io/badge/Pandas-white?logo=pandas&logoColor=150458)](#)
+## Deep Reinforcement Learning based Recommender System in Pytorch
+In this project, we aim to implement a deep reinforcement learning based recommender system, inspired by the paper [Deep Reinforcement Learning based Recommendation with Explicit User-Item Interactions Modeling](https://arxiv.org/abs/1810.12027) by Liu et al. We use the [DDPG](https://arxiv.org/abs/1509.02971) algorithm, which combines actor-critic and deterministic policy gradient methods, to learn a policy that maximizes the expected reward for recommending items to users. To handle the high-dimensional and sparse user-item interaction data, we add a state representation module that transforms the data into a trainable state vector for the RL algorithm. This is not the official implementation of the paper, but our own attempt to reproduce and extend their work.
+
+ We use an actor network with an embedding layer to learn the optimal policy for recommending items to users. We also address the issue of overestimating the Q values by applying a double Q-learning algorithm. Furthermore, we leverage several pretrained embeddings to capture the semantic and contextual information of the items and users. Finally, we employ a prioritized experience replay ([PER])(https://arxiv.org/abs/1511.05952) technique to sample more informative transitions from the replay buffer.
