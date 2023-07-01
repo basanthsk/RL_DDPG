@@ -19,10 +19,10 @@ if __name__ == '__main__':
     
     
     score_history_filename = 'score_history.png'
-    score_history_filpath = '../plots/'+score_history_filename
+    score_history_filpath = './plots/'+score_history_filename
     
     qloss_history_filename = 'qloss_history.png'
-    q_loss_history_filpath = '../plots/'+qloss_history_filename
+    q_loss_history_filpath = './plots/'+qloss_history_filename
     
     
     best_score = 0
